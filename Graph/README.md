@@ -1,5 +1,5 @@
 # 그래프 이론
-- MST(최소 스패닝 트리) -> 크루스칼(Union-Find, Disjoint-Set)
+- MST(최소 스패닝 트리) -> 크루스칼(Union-Find, Disjoint-Set) / (ElogE), 프림 알고리즘(ElogV)
 - 위상 정렬
 - 플로이드-와샬
 - 다익스트라
