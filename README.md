@@ -7,8 +7,8 @@
 4. BFS/DFS
 5. Graph
 6. Simulation, Implemetation
-7. BackTracking
-8. 기타(수학, 기하학, 재귀 등등)
+7. BackTracking, Recursion
+8. 기타(수학, 기하학 등등)
 
 이 주제 중 하나가 나오거나 둘 이상의 주제가 섞여서 나온다.
 
