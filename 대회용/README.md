@@ -1,4 +1,4 @@
 # 코딩테스트 범위를 벗어나는 알고리즘들
 
 - 백준 플래티넘 이상의 알고리즘들과 골드에서도 지엽적이거나 기하와 관련된 것들이 있다.
--  (CCW, KMP, 세그트리, lazy propagation, FFW 등등)
+-  (CCW, KMP, 세그트리, lazy propagation, FF 등등)
