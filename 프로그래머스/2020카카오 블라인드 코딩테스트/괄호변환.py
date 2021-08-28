@@ -1,4 +1,8 @@
+# https://hbj0209.tistory.com/168
+# 프로그래머스 level 2
+
 def solution(p):
+    # 올바른 괄호 문자열인지 판단하는 함수
     def check(s):
         stack = []
         for i in s:
@@ -12,6 +16,7 @@ def solution(p):
         
         return not stack
     
+    # 문자열의 괄호 방향을 뒤집어서 반환해주는 함수
     def change(s):
         tmp = ''
         for i in s:
@@ -21,6 +26,7 @@ def solution(p):
                 tmp += ')'
         return tmp
     
+    # p가 이미 올바른 문자열이면 그대로 return, 빈 문자열이면 그대로 return
     if check(p):
         return p
     if len(p) == 0:
