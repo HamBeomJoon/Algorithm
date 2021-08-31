@@ -1,3 +1,6 @@
+# 다익스트라 O(ElogV)
+
+import heapq
 def dijkstra(start):
     res = [float('INF') for _ in range(V)]
     res[start] = 0
