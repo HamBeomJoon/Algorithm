@@ -41,5 +41,5 @@ while lo != hi:
         
 if lo == mn - 1:
     IMPOSSIBLE
-else:<br>
+else:
     answer = lo
