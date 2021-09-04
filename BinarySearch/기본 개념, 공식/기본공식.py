@@ -21,7 +21,7 @@ while lo != hi:
     int mid = (lo + hi) >> 1
     if f(mid):
         hi = mid
-    else:
+    else:<br>
         lo = mid + 1
         
 if lo == mx + 1:
@@ -36,10 +36,10 @@ while lo != hi:
     int mid = (lo + hi + 1) >> 1
     if f(mid):
         lo = mid
-    else:
+    else:<br>
         hi = mid - 1
         
 if lo == mn - 1:
     IMPOSSIBLE
-else:
+else:<br>
     answer = lo
