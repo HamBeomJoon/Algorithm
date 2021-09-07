@@ -1,5 +1,6 @@
-# 2016년 하반기 기출: 2048(Easy)
-# Gold 2
+# 백준 12100번: 2048(Easy)
+# 2016년 하반기 기출 (Gold 2)
+# 백트래킹 + 시뮬레이션 (빡구현)
 
 import sys, copy
 input = sys.stdin.readline
