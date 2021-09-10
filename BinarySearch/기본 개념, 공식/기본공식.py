@@ -21,7 +21,7 @@ while lo != hi:
     int mid = (lo + hi) >> 1
     if f(mid):
         hi = mid
-    else:<br>
+    else:
         lo = mid + 1
         
 if lo == mx + 1:
