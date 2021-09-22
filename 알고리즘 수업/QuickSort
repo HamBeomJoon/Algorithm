@@ -4,17 +4,17 @@
 
 package week4;
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 public class hw4_QuickSort {
+	static int N, K;
 	public static void main(String[] args) throws IOException {
 		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		
 		st = new StringTokenizer(br.readLine());
-		int N = Integer.parseInt(st.nextToken());
-		int K = Integer.parseInt(st.nextToken());
+		N = Integer.parseInt(st.nextToken());
+		K = Integer.parseInt(st.nextToken());
 		int[] arr = new int[N];
 		
 		st = new StringTokenizer(br.readLine());
@@ -23,44 +23,45 @@ public class hw4_QuickSort {
 			arr[i] = num;
 		}
 		
-		quicksort(arr, 0, arr.length-1);
+		quicksort(arr, 0, N-1);
 		System.out.println(arr[K-1]);
 		
 	}
 	public static void quicksort(int[] array, int left, int right) { 
 		if (left >= right) { 
 			return; 
-			} 
-		int pi = partition(array, left, right);
-		quicksort(array, left, pi - 1);
-		quicksort(array, pi + 1, right); 
-
+		} 
+		
+		int pivot = partition(array, left, right);
+		quicksort(array, left, pivot - 1);
+		quicksort(array, pivot, right);
 	}
 	
 	public static int partition(int[] array, int left, int right) {
 		int mid = (left + right) / 2;
-		swap(array, left, mid);
-		int pivot = array[left];
-		int i = left, j = right;
+		int pivot = array[mid];
 		 
-		while (i < j) {
-			while (pivot < array[j]) {
-				j--;
+		while (left <= right) {
+			while (pivot < array[right]) {
+				right--;
 			}
-			while (i < j && pivot >= array[i]) {
-				i++;
+			while (pivot > array[left]) {
+				left++;
 		    }
-		    swap(array, i, j);
+			if (left <= right) {
+				swap(array, left, right);
+				right--;
+				left++;
+			}
 		}
-		array[left] = array[i];
-		array[i] = pivot;
-		return i;
+		return left;
 	}
 	
 	public static void swap(int[] array, int a, int b) {
-	    int temp = array[b];
-	    array[b] = array[a];
-	    array[a] = temp;
+	    int temp = array[a];
+	    array[a] = array[b];
+	    array[b] = temp;
 	}
 
 }
+
