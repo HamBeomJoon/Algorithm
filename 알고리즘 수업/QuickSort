@@ -1,0 +1,66 @@
+# pivot을 중간값으로 하는 quicksort
+
+// 백준 11004: K번째 수 (silver 5)
+
+package week4;
+import java.io.*;
+import java.lang.reflect.Array;
+import java.util.*;
+public class hw4_QuickSort {
+	public static void main(String[] args) throws IOException {
+		StringTokenizer st;
+		StringBuilder sb = new StringBuilder();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
+		
+		st = new StringTokenizer(br.readLine());
+		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
+		int[] arr = new int[N];
+		
+		st = new StringTokenizer(br.readLine());
+		for (int i = 0; i < N; i++) {
+			int num = Integer.parseInt(st.nextToken());
+			arr[i] = num;
+		}
+		
+		quicksort(arr, 0, arr.length-1);
+		System.out.println(arr[K-1]);
+		
+	}
+	public static void quicksort(int[] array, int left, int right) { 
+		if (left >= right) { 
+			return; 
+			} 
+		int pi = partition(array, left, right);
+		quicksort(array, left, pi - 1);
+		quicksort(array, pi + 1, right); 
+
+	}
+	
+	public static int partition(int[] array, int left, int right) {
+		int mid = (left + right) / 2;
+		swap(array, left, mid);
+		int pivot = array[left];
+		int i = left, j = right;
+		 
+		while (i < j) {
+			while (pivot < array[j]) {
+				j--;
+			}
+			while (i < j && pivot >= array[i]) {
+				i++;
+		    }
+		    swap(array, i, j);
+		}
+		array[left] = array[i];
+		array[i] = pivot;
+		return i;
+	}
+	
+	public static void swap(int[] array, int a, int b) {
+	    int temp = array[b];
+	    array[b] = array[a];
+	    array[a] = temp;
+	}
+
+}
