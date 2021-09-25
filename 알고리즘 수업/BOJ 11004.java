@@ -1,3 +1,5 @@
+// pivot을 가운데 수로 정함으로써 NlogN에 정렬되도록 했다.
+
 import java.io.*;
 import java.util.*;
 public class hw4_QuickSort {
