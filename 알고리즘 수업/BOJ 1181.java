@@ -1,3 +1,6 @@
+// 백준 1181번: 단어 정렬 (Silver 5)
+// 그냥 내장함수 sort를 사용
+
 import java.io.*;
 import java.util.*;
 public class Main {
