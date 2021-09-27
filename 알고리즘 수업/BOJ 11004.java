@@ -1,4 +1,5 @@
-// pivot을 가운데 수로 정함으로써 NlogN에 정렬되도록 했다.
+// 백준 11004번: K번째 수 (Silver 5)
+// 일반적인 QuickSort가 아닌 pivot을 가운데 수로 정함으로써 NlogN에 정렬되도록 했다.
 
 import java.io.*;
 import java.util.*;
