@@ -1,5 +1,5 @@
-# 백준 21608번 (Silver 1)
-# 2021 상반기 삼성SW역량테스트 기출
+# 2021 상반기 삼성SW역량테스트 기출문제이다.
+# 백준 21608번: 상어 초등학교 (Silver 1)
 
 from collections import defaultdict
 import sys
