@@ -3,11 +3,11 @@
 코딩테스트에 나오는 주제는 많지 않다.
 1. DP
 2. Greedy
-3. Sorting (BinarySearch)
+3. Binary Search(Parametric Search)
 4. BFS/DFS
 5. Graph
 6. Simulation, Implemetation
-7. BackTracking, Recursion
+7. Recursion(BackTracking)
 8. 기타(수학, 기하학 등등)
 
 이 주제 중 하나가 나오거나 둘 이상의 주제가 섞여서 나온다. (적고보니 많네..)
