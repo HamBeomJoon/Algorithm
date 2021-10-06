@@ -44,7 +44,7 @@ def update(tree, node, start, end, index, diff):
     if start != end:
         update(tree, node*2, start, (start+end)//2, index, diff)
         update(tree, node*2+1, (start+end)//2+1, end, index, diff)
-
+        
 N, M, K = map(int,input().split())
 arr = []
 tree = [0] * 10000000
